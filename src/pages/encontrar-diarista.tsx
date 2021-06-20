@@ -4,6 +4,7 @@ import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import TextInput from "ui/components/inputs/TextInput/TextInput";
 import { TextInputMask } from "react-native-masked-text";
 import Button from "ui/components/inputs/Button/Button";
+import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
 
 const EncontrarDiaristas: React.FC = () => {
   const [cep, setCep] = useState("");
@@ -33,6 +34,13 @@ const EncontrarDiaristas: React.FC = () => {
       <Button mode={"contained"} style={{ marginTop: 32 }}>
         Buscar
       </Button>
+
+      <UserInformation
+        name={"Flavio Mendes"}
+        rating={3}
+        picture={"https://github.com/Flaviohmm.png"}
+        description={"Natal"}
+      />
     </View>
   );
 };
